@@ -8,17 +8,19 @@
 
 int main(void)
 {
-	int x;
-	int y;
-	int z;
+	int count;
 
-	for (x = '0'; x <= '9'; x++)
+	for (count = 48; count <= 57; count++)
 	{
-		putchar(x);
-		for (y = ','; y == ','; y++)
-		putchar(y);
-		for (z = ' '; z == ' '; z++)
-		putchar(z);
+		putchar(count);
+		if (count <= 56)
+		{
+			putchar(44);
+		}
+		if (count <= 56)
+		{
+			putchar(32);
+		}
 	}
 		putchar('\n');
 
