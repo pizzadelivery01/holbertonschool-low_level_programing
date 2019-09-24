@@ -10,12 +10,12 @@
 
 void print_alphabet_x10(void)
 {
-	char letter
+	char letter;
 	int repeat = 1;
 
 	while (repeat <= 10)
 	{
-		int letter = 'a';
+		letter = 'a';
 
 		while (letter <= 'z')
 		{
