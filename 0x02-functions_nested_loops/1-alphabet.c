@@ -2,11 +2,10 @@
 #include "holberton.h"
 
 /**
- *print_alphabet entry point
+ * print_alphabet - entry point
  *
- *print_alphabet will print the english alphabet in lowercase
+ * Desctiption: print_alphabet will print the english alphabet in lowercase
  *
- *return void
  */
 
 void print_alphabet(void)
