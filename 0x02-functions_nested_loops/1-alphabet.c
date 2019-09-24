@@ -1,20 +1,22 @@
-include <unistd.h>
+#include <unistd.h>
 #include "holberton.h"
 
 /**
+ *print_alphabet entry point
+ *
  *print_alphabet will print the english alphabet in lowercase
  *
- *no return void
+ *return void
  */
 
 void print_alphabet(void)
 {
 	letter = 'a';
 
-	while( letter <= 'z')
+	while (letter <= 'z')
 	{
-		_putchar( letter);
+		_putchar (letter);
 		letter++;
 	}
-	_putchar( '\n');
+	_putchar ('\n');
 }
