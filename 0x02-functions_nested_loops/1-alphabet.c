@@ -1,4 +1,4 @@
-B#include <unistd.h>
+#include <unistd.h>
 #include "holberton.h"
 
 /**
@@ -19,4 +19,5 @@ void print_alphabet(void)
 		letter++;
 	}
 	_putchar('\n');
+	return (void);
 }
