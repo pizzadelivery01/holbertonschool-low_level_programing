@@ -12,10 +12,9 @@ int main(void)
 int i;
 char string[9] = "Holberton";
 
-if (i <= 9)
+for (i = 0, i <= 8, i++)
 {
 	_putchar(string[i]);
-	i++;
 }
 _putchar("\n");
 return (0);
