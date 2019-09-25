@@ -49,6 +49,7 @@ void jack_bauer(void)
 			_putchar(sm);
 			_putchar('\n');
 			break;
+		}
 		fh++;
 		sh = '0';
 	}
