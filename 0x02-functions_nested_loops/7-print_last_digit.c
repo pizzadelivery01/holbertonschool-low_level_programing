@@ -2,7 +2,7 @@
 
 /**
  * print_last_digit -  prints last digit of number
- * @input: number inputed
+ * @input: integer inputed
  *
  * Discription: function for finding just last number of number
  *
@@ -11,5 +11,11 @@
 
 int print_last_digit(int input)
 {
-	return (input % 10);
+	int last = input % 10;
+
+
+	if (last < 0)
+		last = (last * -1);
+	_putchar(last + '0');
+	return (last);
 }
