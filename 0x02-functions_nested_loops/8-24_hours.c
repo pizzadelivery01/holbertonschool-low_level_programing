@@ -17,9 +17,9 @@ void jack_bauer(void)
 
 	while (first_hour < '3')
 	{
-		while (second_hour < '5')
+		while (second_hour < '4')
 		{
-			while (first_min < '7')
+			while (first_min < '6')
 			{
 				while (second_min <= '9')
 				{
@@ -31,11 +31,14 @@ void jack_bauer(void)
 					_putchar('\n');
 					second_min++;
 				}
+				second_min = '0';
 				first_min++;
 			}
+			first_min = '0';
 			second_hour++;
 		}
 		first_hour++;
+		second_hour = '0';
 	}
 
 }
