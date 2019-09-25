@@ -1,4 +1,3 @@
-50
 #include "holberton.h"
 
 /**
@@ -12,7 +11,7 @@
 void jack_bauer(void)
 {
 	int fh = '0', sh = '0', fm = '0', sm = '0';
-
+	/*starts time*/
 	while (fh < '3')
 	{
 		while (sh <= '9' && fh < '3')
@@ -21,6 +20,7 @@ void jack_bauer(void)
 			{
 				while (sm <= '9')
 				{
+					/*prints time*/
 					_putchar(fh);
 					_putchar(sh);
 					_putchar(':');
