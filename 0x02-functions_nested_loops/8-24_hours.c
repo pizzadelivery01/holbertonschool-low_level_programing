@@ -26,9 +26,9 @@ void jack_bauer(void)
 					_putchar(fm);
 					_putchar(sm);
 					_putchar('\n');
-					sm++;
 		if ((fh == '2' && sh == '3') && (fm == '5' && sm == '9'))
 			break;
+		sm++;
 				}
 		if ((fh == '2' && sh == '3') && (fm == '5' && sm == '9'))
 			break;
@@ -39,16 +39,6 @@ void jack_bauer(void)
 			break;
 			fm = '0';
 			sh++;
-		}
-		if ((fh == '2' && sh == '3') && (fm == '5' && sm == '9'))
-		{
-			_putchar(fh);
-			_putchar(sh);
-			_putchar(':');
-			_putchar(fm);
-			_putchar(sm);
-			_putchar('\n');
-			break;
 		}
 		fh++;
 		sh = '0';
