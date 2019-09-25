@@ -10,35 +10,47 @@
 
 void jack_bauer(void)
 {
-	int first_hour = '0';
-	int second_hour = '0';
-	int first_min = '0';
-	int second_min = '0';
+	int fh = '0', sh = '0', fm = '0', sm = '0';
 
-	while (first_hour < '3')
+	while (fh < '3')
 	{
-		while (second_hour < '4')
+		while (sh < '9' && fh < '3')
 		{
-			while (first_min < '6')
+			while (fm < '6')
 			{
-				while (second_min <= '9')
+				while (sm <= '9')
 				{
-					_putchar(first_hour);
-					_putchar(second_hour);
+					_putchar(fh);
+					_putchar(sh);
 					_putchar(':');
-					_putchar(first_min);
-					_putchar(second_min);
+					_putchar(fm);
+					_putchar(sm);
 					_putchar('\n');
-					second_min++;
+					sm++;
+		if ((fh == '2' && sh == '3') && (fm == '5' && sm == '9'))
+			break;
 				}
-				second_min = '0';
-				first_min++;
+		if ((fh == '2' && sh == '3') && (fm == '5' && sm == '9'))
+			break;
+			sm = '0';
+			fm++;
 			}
-			first_min = '0';
-			second_hour++;
+		if ((fh == '2' && sh == '3') && (fm == '5' && sm == '9'))
+			break;
+			fm = '0';
+			sh++;
 		}
-		first_hour++;
-		second_hour = '0';
+		if ((fh == '2' && sh == '3') && (fm == '5' && sm == '9'))
+		{
+			_putchar(fh);
+			_putchar(sh);
+			_putchar(':');
+			_putchar(fm);
+			_putchar(sm);
+			_putchar('\n');
+			break;
+		fh++;
+		sh = '0';
 	}
 
 }
