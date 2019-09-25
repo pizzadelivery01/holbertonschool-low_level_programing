@@ -14,7 +14,7 @@ void jack_bauer(void)
 
 	while (fh < '3')
 	{
-		while (sh < '9' && fh < '3')
+		while (sh <= '9' && fh < '3')
 		{
 			while (fm < '6')
 			{
