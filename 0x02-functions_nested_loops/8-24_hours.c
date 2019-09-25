@@ -10,18 +10,18 @@
 
 void jack_bauer(void)
 {
-	int first_hour = 0;
-	int second_hour = 0;
-	int first_min = 0;
-	int second_min = 0;
+	int first_hour = '0';
+	int second_hour = '0';
+	int first_min = '0';
+	int second_min = '0';
 
-	while (first_hour < 3)
+	while (first_hour < '3')
 	{
-		while (second_hour < 5)
+		while (second_hour < '5')
 		{
-			while (first_min < 7)
+			while (first_min < '7')
 			{
-				while (second_min <= 9)
+				while (second_min <= '9')
 				{
 					_putchar(first_hour);
 					_putchar(second_hour);
