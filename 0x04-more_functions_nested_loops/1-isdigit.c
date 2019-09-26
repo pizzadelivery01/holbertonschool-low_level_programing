@@ -1,7 +1,6 @@
 #include "holberton.h"
 
 /**
- *
  * _isdigit - entry point main function
  * @c: integer
  *
