@@ -1,6 +1,7 @@
 #ifndef holberton_h
 #define holberton_h
 
+int mul(int a, int b);
 int _isdigit(int c);
 int _putchar(char c);
 void print_alphabet(void);
