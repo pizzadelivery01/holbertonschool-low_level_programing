@@ -3,13 +3,13 @@
 /**
  * print_most_numbers -  entry point fo function
  *
- * Descrtiption: prints numbers 0-9 except 2 and 4
+ * Description: prints numbers 0-9 except 2 and 4
  *
  *
  * Return: nothing
  */
 
-void print_most_numbers(void);
+void print_most_numbers(void)
 {
 	int i = '0';
 
@@ -20,7 +20,9 @@ void print_most_numbers(void);
 			continue;
 		}
 		else
+		{
 			_putchar(i + '0');
-		i++;
+			i++;
+		}
 	}
 }
