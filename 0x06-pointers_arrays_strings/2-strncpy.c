@@ -1,4 +1,4 @@
-#include "holberton"
+#include "holberton.h"
 /**
  * *_strncpy - copies string to destination
  * @n: int
