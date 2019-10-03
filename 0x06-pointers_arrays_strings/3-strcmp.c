@@ -1,4 +1,4 @@
-B#include "holberton.h"
+#include "holberton.h"
 /**
  * _strcmp - compares strings
  * @s1: string
@@ -11,7 +11,7 @@ B#include "holberton.h"
 
 int _strcmp(char *s1, char *s2)
 {
-	i = 0;
+	int i = 0;
 
 	while (s1[i] != '\0')
 	{
@@ -19,7 +19,7 @@ int _strcmp(char *s1, char *s2)
 			return (s1[i] - s2[i]);
 		if (s1[i] > s2[i])
 			return (s1[i] - s2[i]);
-		i++
+		i++;
 	}
 	return (0);
 }
