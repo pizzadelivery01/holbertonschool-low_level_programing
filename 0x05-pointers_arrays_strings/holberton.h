@@ -1,6 +1,7 @@
 #ifndef holberton_h
 #define holberton_h
 
+int _strlen(char *s);
 void swap_int(int *a, int *b);
 void reset_to_98(int *n);
 void print_most_numbers(void);
