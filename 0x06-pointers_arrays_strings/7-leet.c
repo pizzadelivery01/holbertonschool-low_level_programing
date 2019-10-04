@@ -10,23 +10,24 @@
 
 char *leet(char *str)
 {
-	int string = 0;
+	int string_count = 0;
 	int compare = 0;
 
-	letters[] = {'a', 'e', 'o', 't', 'l', 'A', 'E', 'O', 'T', 'L'};
-	numbers[] = {'4', '3', '0', '7', '1', '4', '3', '0', '7', '1'};
+	int letters[] = {'a', 'e', 'o', 't', 'l', 'A', 'E', 'O', 'T', 'L'};
+	int numbers[] = {'4', '3', '0', '7', '1', '4', '3', '0', '7', '1'};
 
-	while (str[string] != '\0')
+	while (str[string_count] != '\0')
 	{
+		compare = 0;
 		while (compare <= 9)
 		{
-			if (str[string] == letters[compare])
+			if (str[string_count] == letters[compare])
 			{
-				str[string] = numbers[compare];
+				str[string_count] = numbers[compare];
 			}
 			compare++;
 		}
-		string++;
+		string_count++;
 	}
 	return (str);
 }
