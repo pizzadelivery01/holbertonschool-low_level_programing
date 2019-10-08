@@ -4,7 +4,7 @@
  * @s: string searched
  * @accept: list of matching characters
  *
- * Description: how many matching characters in a row from start of string is in
+ * Description: matching characters in a row from start of string is in
  * accepted list
  *
  * Return: unsigned int
