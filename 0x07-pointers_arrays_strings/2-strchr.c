@@ -1,4 +1,5 @@
 #include "holberton.h"
+#include <stdio.h>
 /**
  * _strchr - changes pointer in str
  * @s: input string
@@ -11,14 +12,13 @@
 
 char *_strchr(char *s, char c)
 {
-	int i = 0;
 
-	while (s[i] <= '\0')
+
+	while (*s != '\0')
 	{
-		if (s[i] == c || s[i] == '\0')
+		if (*s == c)
 			return (s);
 		s++;
-		i++;
 	}
-	return (s);
+	return (NULL);
 }
