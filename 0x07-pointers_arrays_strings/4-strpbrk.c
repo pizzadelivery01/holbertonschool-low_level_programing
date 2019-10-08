@@ -12,7 +12,7 @@
 
 char *_strpbrk(char *s, char *accept)
 {
-	int i;
+	int i = 0;
 
 	while ((*s != '\0') && (s != NULL))
 	{
@@ -20,10 +20,10 @@ char *_strpbrk(char *s, char *accept)
 		while (accept[i] != '\0')
 		{
 			if (*s == accept[i])
-			return (s);
-		i++;
-		s++;
+				return (s);
+			i++;
 		}
+		s++;
 	}
 	if (accept == '\0')
 		return (s);
