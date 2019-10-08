@@ -1,6 +1,7 @@
 #ifndef holberton_h
 #define holberton_h
 
+void set_string(char **s, char *to);
 char *_strpbrk(char *s, char *accept);
 unsigned int _strspn(char *s, char *accept);
 char *_strchr(char *s, char c);
