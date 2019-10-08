@@ -10,7 +10,7 @@
  * Return: pointer
  */
 
-char *_strpbrk(char *s, char *accept)
+har *_strpbrk(char *s, char *accept)
 {
 	int i;
 
