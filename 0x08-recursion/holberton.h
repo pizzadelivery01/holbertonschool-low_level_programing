@@ -1,6 +1,8 @@
 #ifndef holberton_h
 #define holberton_h
 
+int _strlen_recursion(char *s);
+int factorial(int n);
 void _print_rev_recursion(char *s);
 void _puts_recursion(char *s);
 void print_chessboard(char (*a)[8]);
