@@ -1,6 +1,7 @@
 #ifndef holberton_h
 #define holberton_h
 
+int issqrt(int i, int s);
 int _sqrt_recursion(int n);
 int _pow_recursion(int x, int y);
 int _strlen_recursion(char *s);
