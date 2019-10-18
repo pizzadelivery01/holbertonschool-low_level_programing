@@ -1,0 +1,1 @@
+this repo is about allocating memory and freeing memory for c language
