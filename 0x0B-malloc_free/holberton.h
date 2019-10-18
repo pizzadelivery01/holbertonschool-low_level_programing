@@ -7,7 +7,7 @@ int **alloc_grid(int width, int height);
 char *str_concat(char *s1, char *s2);
 char *_strdup(char *str);
 char *create_array(unsigned int size, char c);
-int atoi(char *s);
+int _atoi(char *s);
 int issqrt(int i, int s);
 int _sqrt_recursion(int n);
 int _pow_recursion(int x, int y);
