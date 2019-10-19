@@ -1,4 +1,4 @@
-B#include "holberton.h"
+#include "holberton.h"
 #include <stdlib.h>
 #include <stdio.h>
 
@@ -7,7 +7,8 @@ B#include "holberton.h"
  * @min: min range
  * @max: max range
  * Description: creates an array of ints from min to max
- * Returns: pointer or NULL
+ *
+ * Return: pointer or NULL
  */
 
 int *array_range(int min, int max)
