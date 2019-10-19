@@ -1,7 +1,7 @@
 #ifndef holberton_h
 #define holberton_h
 
-void *_calloc(unsigned int nmemb, unsigned int size)
+void *_calloc(unsigned int nmemb, unsigned int size);
 void *malloc_checked(unsigned int b);
 char *argstostr(int ac, char **av);
 void free_grid(int **grid, int height);

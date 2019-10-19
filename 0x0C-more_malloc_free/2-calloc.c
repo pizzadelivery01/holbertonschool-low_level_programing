@@ -1,4 +1,5 @@
 #include "holberton.h"
+#include <stdlib.h>
 
 /**
  * _calloc - allocates memory and files with 0
@@ -20,7 +21,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 		return (NULL);
 	while (i < (nmemb * size))
 	{
-		ptr[i] = '0';
+		((int*)ptr)[i] = 0;
 		i++;
 	}
 	return ((void *)ptr);
