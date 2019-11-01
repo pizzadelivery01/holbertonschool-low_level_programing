@@ -12,10 +12,11 @@ size_t print_list(const list_t *h)
 
 	i = 0;
 	temp = h;
-	for (i; temp != NULL; i++)
+	while (temp != NULL)
 	{
 		printf("[%d] %s\n", temp->len, temp->str);
 		temp = temp->next;
+		i++;
 	}
 	return (i);
 }
