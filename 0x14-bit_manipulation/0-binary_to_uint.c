@@ -1,4 +1,4 @@
-B#include "holberton.h"
+#include "holberton.h"
 /**
  * binary_to_uint - binarty to uint conv
  * @b: stirng to binary numbers
@@ -15,16 +15,16 @@ unsigned int binary_to_uint(const char *b)
 		return (0);
 	i = 0;
 	while (b[i + 1] != '\0')
-	{
-		if ((b[i] - '0') != (1 || 0))
-			return (0);
 		i++;
-	}
+
 	j = 1;
 	num = 0;
 
 	while (i >= 0)
 	{
+		if (b[i] - '0' != 1 && b[i] - '0' != 0)
+			return (0);
+
 		num += (b[i] - '0') * j;
 
 		j *= 2;
