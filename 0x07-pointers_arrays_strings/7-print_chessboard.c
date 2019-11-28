@@ -1,4 +1,5 @@
 #include "holberton.h"
+#include <stdio.h>
 /**
  * print_chessboard - prints double arrays
  * @a: array
@@ -22,5 +23,8 @@ void print_chessboard(char (*a)[8])
 		}
 		_putchar ('\n');
 		first++;
+		       printf("first equals %d\n", first);
+		       printf("a[first] = %d\n", *a[first]);
+			      printf("\n\n");
 	}
 }
