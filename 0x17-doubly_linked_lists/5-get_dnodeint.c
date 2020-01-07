@@ -1,6 +1,6 @@
 #include "lists.h"
 /**
- * get_dnodeint - gets node at index
+ * get_dnodeint_at_index - gets node at index
  * @head: pointer to top of linked list
  * @index: index of node wanted
  * Return: pointer to indexed node
@@ -18,7 +18,7 @@ dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
 		temp = temp->next;
 	}
 	if (index > count)
-		return(NULL);
+		return (NULL);
 	count = 0;
 	temp = head;
 	while (count < index)
