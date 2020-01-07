@@ -1,1 +1,0 @@
-doubly linked list is a upgrade to singly linked list in which you can also move backwords throught the list
