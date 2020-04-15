@@ -53,5 +53,5 @@ int binary_h(int *array, int match, int lower, int highest)
 	if (array[mid] < match)
 		return (binary_h(array, match, mid + 1, highest));
 	else
-		return (binary_h(array, match, lower, mid - 1));
+		return (binary_h(array, match, lower, mid));
 }
