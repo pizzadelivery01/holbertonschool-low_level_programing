@@ -13,7 +13,7 @@ int binary_search(int *array, size_t size, int value)
 {
 	int result;
 
-	result = binary_h(array, value, 0, size);
+	result = binary_h(array, value, -1, size);
 	if (result)
 		return (result);
 	return (-1);
@@ -36,8 +36,10 @@ int binary_h(int *array, int match, int lower, int highest)
 
 	if (!array)
 		return (-1);
+	if (lower == highest || highest == 0)
+		return (-1);
 	printf("Searching in array: ");
-	for (i = lower; i < highest; i++)
+	for (i = lower + 1; i < highest; i++)
 	{
 		printf("%d", array[i]);
 		if (i + 1 < highest)
