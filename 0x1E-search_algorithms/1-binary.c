@@ -1,7 +1,7 @@
 #include "search_algos.h"
 
 /**
- * binary_search(int *array, size_t size, int value)
+ * binary_search - search for value in list using binary search
  * @array: pointer to first element
  * @size: size of array
  * @value: value searching for
@@ -47,9 +47,9 @@ int binary_h(int *array, int match, int lower, int highest)
 
 	mid = (lower + highest) / 2;
 	if (array[mid] == match)
-		return mid;
+		return (mid);
 	if (array[mid] < match)
-		return binary_h(array, match, mid + 1, highest);
+		return (binary_h(array, match, mid + 1, highest));
 	else
-		return binary_h(array, match, lower, mid - 1);
+		return (binary_h(array, match, lower, mid - 1));
 }
