@@ -11,47 +11,31 @@
 
 int binary_search(int *array, size_t size, int value)
 {
-	int result;
+	int l = 0, r = 0, m = 0, i = 0;
 
-	result = binary_h(array, value, -1, size);
-	if (result)
-		return (result);
-	return (-1);
-}
-
-/**
- * binary_h - helper for binary search
- * @array: array of ints
- * @match: value looking to match
- * @lower: lower limit
- * @highest: highest limit
- *
- *Return: index of match or -1
- */
-
-int binary_h(int *array, int match, int lower, int highest)
-{
-	int i, mid;
-
-
-	if (!array)
+	if (array == NULL || size == 0)
 		return (-1);
-	if (lower == highest || highest == 0)
-		return (-1);
-	printf("Searching in array: ");
-	for (i = lower + 1; i < highest; i++)
+	r = size - 1;
+
+	while (l <= r)
 	{
-		printf("%d", array[i]);
-		if (i + 1 < highest)
-			printf(", ");
+		i = 0;
+		printf("Searching in array: ");
+		for (i = l; i <= r; i++)
+			if (i == r)
+			{
+				printf("%d\n", array[r]);
+				break;
+			}
+			else
+				printf("%d, ", array[i]);
+		m = (l + r) / 2;
+		if (array[m] < value)
+			l = m + 1;
+		else if (array[m] > value)
+			r = m - 1;
+		else
+			return (m);
 	}
-	printf("\n");
-
-	mid = (lower + highest) / 2;
-	if (array[mid] == match)
-		return (mid);
-	if (array[mid] < match)
-		return (binary_h(array, match, mid + 1, highest));
-	else
-		return (binary_h(array, match, lower, mid));
+	return (-1);
 }
